@@ -1,0 +1,21 @@
+{
+  "rolling_gate.configuration.gugu_hud": "咕咕HUD",
+  "rolling_gate.configuration.gugu_hud.button": "咕咕HUD",
+  "rolling_gate.configuration.gugu_hud.tooltip": "便捷的信息显示",
+  "rolling_gate.configuration.showHud": "显示HUD",
+  "rolling_gate.configuration.showHud.tooltip": "是否显示HUD",
+  "rolling_gate.configuration.alwaysShow": "总是显示",
+  "rolling_gate.configuration.alwaysShow.tooltip": "是否在隐藏Gui时依旧显示HUD",
+  "rolling_gate.configuration.showFPS": "显示FPS",
+  "rolling_gate.configuration.showFPS.tooltip": "是否在HUD上显示FPS",
+  "rolling_gate.configuration.showTPS": "显示TPS",
+  "rolling_gate.configuration.showTPS.tooltip": "是否在HUD上显示TPS",
+  "rolling_gate.configuration.fontSize": "字体大小",
+  "rolling_gate.configuration.fontSize.tooltip": "HUD字体大小",
+  "rolling_gate.configuration.showGameDayTime": "显示游戏时间",
+  "rolling_gate.configuration.showGameDayTime.tooltip": "是否在HUD上显示游戏时间",
+  "rolling_gate.configuration.game_day_time_format": "游戏时间格式",
+  "rolling_gate.configuration.game_day_time_format.tooltip": "HUD上显示游戏时间的格式",
+  "gugu_hud.tps_hud.no_data": "无可用数据",
+  "gugu_hud.tps_hud.format": "TPS: %s MSPT: %s"
+}
