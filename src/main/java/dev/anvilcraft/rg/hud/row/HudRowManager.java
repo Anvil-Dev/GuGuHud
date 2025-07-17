@@ -25,6 +25,7 @@ public class HudRowManager {
     public static final Supplier<HudRow> FPS_HUD_ROW = HUD_ROW_DEFERRED_REGISTER.register("fps", FPSHudRow::new);
     public static final Supplier<HudRow> TPS_HUD_ROW = HUD_ROW_DEFERRED_REGISTER.register("tps", TPSHudRow::new);
     public static final Supplier<HudRow> GAME_DAY_TIME_HUD_ROW = HUD_ROW_DEFERRED_REGISTER.register("game_day_time", GameDayTimeHudRow::new);
+    public static final Supplier<HudRow> MOON_PHASE_ROW = HUD_ROW_DEFERRED_REGISTER.register("moon_phase",MoonPhaseHudRow::new);
 
     @SubscribeEvent
     public static void registerRegistries(@NotNull NewRegistryEvent event) {

@@ -16,6 +16,17 @@
   "rolling_gate.configuration.showGameDayTime.tooltip": "是否在HUD上显示游戏时间",
   "rolling_gate.configuration.game_day_time_format": "游戏时间格式",
   "rolling_gate.configuration.game_day_time_format.tooltip": "HUD上显示游戏时间的格式",
+  "rolling_gate.configuration.showMoonPhase": "显示月相",
+  "rolling_gate.configuration.showMoonPhase.tooltip": "是否在HUD上显示月相",
   "gugu_hud.tps_hud.no_data": "无可用数据",
-  "gugu_hud.tps_hud.format": "TPS: %s MSPT: %s"
+  "gugu_hud.tps_hud.format": "TPS: %s MSPT: %s",
+  "gugu_hud.moon_phase_hud.moon_phase": "月相",
+  "gugu_hud.moon_phase_hud.new_moon": "满月",
+  "gugu_hud.moon_phase_hud.waxing_crescent": "亏凸月",
+  "gugu_hud.moon_phase_hud.waxing_half": "下弦月",
+  "gugu_hud.moon_phase_hud.waxing_gibbous": "残月",
+  "gugu_hud.moon_phase_hud.full_moon": "新月",
+  "gugu_hud.moon_phase_hud.waning_gibbous": "蛾眉月",
+  "gugu_hud.moon_phase_hud.waning_half": "上弦月",
+  "gugu_hud.moon_phase_hud.waning_crescent": "盈凸月"
 }
