@@ -8,7 +8,7 @@ public class GuGuHudRgRules {
     @Rule(
         categories = GuGuHud.MODID
     )
-    public static boolean showHud = true;
+    public static boolean showHud = false;
     @Rule(
         categories = GuGuHud.MODID
     )
@@ -22,7 +22,7 @@ public class GuGuHudRgRules {
     @Rule(
         categories = GuGuHud.MODID
     )
-    public static boolean showFPS = true;
+    public static boolean showFPS = false;
     @Rule(
         categories = GuGuHud.MODID
     )
@@ -30,7 +30,7 @@ public class GuGuHudRgRules {
     @Rule(
         categories = GuGuHud.MODID
     )
-    public static boolean showGameDayTime = true;
+    public static boolean showGameDayTime = false;
     @Rule(
         categories = GuGuHud.MODID
     )
