@@ -34,5 +34,9 @@ public class GuGuHudRgRules {
     @Rule(
         categories = GuGuHud.MODID
     )
-    public static String gameDayTimeFormat = "{Days} days-{Hours}:{Minutes}";
+    public static String gameDayTimeFormat = "{Days} Day(s)-{Hours}:{Minutes}";
+    @Rule(
+        categories = GuGuHud.MODID
+    )
+    public static boolean showMoonPhase = false;
 }
