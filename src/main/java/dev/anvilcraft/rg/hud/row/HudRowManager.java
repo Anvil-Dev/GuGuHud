@@ -24,6 +24,7 @@ public class HudRowManager {
 
     public static final DeferredRegister<HudRow> HUD_ROW_DEFERRED_REGISTER = DeferredRegister.create(HUD_ROWS, GuGuHud.MODID);
 
+    public static final Supplier<HudRow> MEMORY_HUD_ROW = HUD_ROW_DEFERRED_REGISTER.register("memory", MemoryHudRow::new);
     public static final Supplier<HudRow> FPS_HUD_ROW = HUD_ROW_DEFERRED_REGISTER.register("fps", FPSHudRow::new);
     public static final Supplier<HudRow> TPS_HUD_ROW = HUD_ROW_DEFERRED_REGISTER.register("tps", TPSHudRow::new);
     public static final Supplier<HudRow> GAME_DAY_TIME_HUD_ROW = HUD_ROW_DEFERRED_REGISTER.register("game_day_time", GameDayTimeHudRow::new);

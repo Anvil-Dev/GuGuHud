@@ -39,4 +39,8 @@ public class GuGuHudRgRules {
         categories = GuGuHud.MODID
     )
     public static boolean showMoonPhase = false;
+    @Rule(
+        categories = GuGuHud.MODID
+    )
+    public static boolean showMemory = false;
 }
