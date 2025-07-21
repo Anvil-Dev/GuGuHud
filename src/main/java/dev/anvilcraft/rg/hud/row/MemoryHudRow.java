@@ -6,7 +6,7 @@ import net.minecraft.client.DeltaTracker;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.network.chat.Component;
 
-public class MemoryHudRow extends HudRow{
+public class MemoryHudRow extends HudRow {
     @Override
     public boolean isVisible() {
         return GuGuHudRgRules.showMemory;
@@ -22,7 +22,7 @@ public class MemoryHudRow extends HudRow{
         ChatFormatting memoryColor = heatmapColor(usedMemory, maxMemory);
 
         return this.drawString(Component.translatable("gugu_hud.memory_hud.memory_usage",
-            Component.literal("%s%%".formatted(usedMemory* 100L /maxMemory)).withStyle(memoryColor),
+            Component.literal("%s%%".formatted(usedMemory * 100L / maxMemory)).withStyle(memoryColor),
             byteTOMB(usedMemory),
             byteTOMB(maxMemory),
             totalMemory * 100L / maxMemory,
@@ -36,7 +36,7 @@ public class MemoryHudRow extends HudRow{
         return color;
     }
 
-    public long byteTOMB(long bytes){
+    public long byteTOMB(long bytes) {
         return bytes / 1024 / 1024;
     }
 

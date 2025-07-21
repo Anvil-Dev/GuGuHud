@@ -30,6 +30,14 @@ public class GuGuHudRgRules {
     @Rule(
         categories = GuGuHud.MODID
     )
+    public static boolean showMoonPhase = false;
+    @Rule(
+        categories = GuGuHud.MODID
+    )
+    public static boolean showMemory = false;
+    @Rule(
+        categories = GuGuHud.MODID
+    )
     public static boolean showGameDayTime = false;
     @Rule(
         categories = GuGuHud.MODID
@@ -38,9 +46,21 @@ public class GuGuHudRgRules {
     @Rule(
         categories = GuGuHud.MODID
     )
-    public static boolean showMoonPhase = false;
+    public static boolean showRealTime = false;
     @Rule(
         categories = GuGuHud.MODID
     )
-    public static boolean showMemory = false;
+    public static String realTimeFormat = "yyyy-MM-dd hh:mm:ss";
+    @Rule(
+        categories = GuGuHud.MODID
+    )
+    public static boolean showGameTime = false;
+    @Rule(
+        categories = GuGuHud.MODID
+    )
+    public static boolean showPlayerPosition = false;
+    @Rule(
+        categories = GuGuHud.MODID
+    )
+    public static boolean showPlayerPositionScaled = false;
 }

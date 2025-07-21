@@ -20,6 +20,16 @@
   "rolling_gate.configuration.showMoonPhase.tooltip": "是否在HUD上显示月相",
   "rolling_gate.configuration.showMemory": "显示内存占用",
   "rolling_gate.configuration.showMemory.tooltip": "是否在HUD上显示内存占用",
+  "rolling_gate.configuration.showRealTime": "显示现实时间",
+  "rolling_gate.configuration.showRealTime.tooltip": "是否在HUD上显示现实时间",
+  "rolling_gate.configuration.real_time_format": "现实时间格式",
+  "rolling_gate.configuration.real_time_format.tooltip": "HUD上显示现实时间的格式",
+  "rolling_gate.configuration.showGameTime": "显示世界时间",
+  "rolling_gate.configuration.showGameTime.tooltip": "是否在HUD上显示世界时间",
+  "rolling_gate.configuration.showPlayerPosition": "显示玩家坐标",
+  "rolling_gate.configuration.showPlayerPosition.tooltip": "是否在HUD上显示玩家坐标",
+  "rolling_gate.configuration.showPlayerPositionScaled": "显示玩家坐标映射",
+  "rolling_gate.configuration.showPlayerPositionScaled.tooltip": "是否在HUD上显示玩家坐标映射",
   "gugu_hud.tps_hud.no_data": "无可用数据",
   "gugu_hud.tps_hud.format": "TPS: %s MSPT: %s",
   "gugu_hud.moon_phase_hud.moon_phase": "月相",
@@ -31,5 +41,9 @@
   "gugu_hud.moon_phase_hud.waning_gibbous": "蛾眉月",
   "gugu_hud.moon_phase_hud.waning_half": "上弦月",
   "gugu_hud.moon_phase_hud.waning_crescent": "盈凸月",
-  "gugu_hud.memory_hud.memory_usage": "内存占用: %s %s/%sMB | 已分配: %s%% %sMB"
+  "gugu_hud.memory_hud.memory_usage": "内存占用: %s %s/%sMB | 已分配: %s%% %sMB",
+  "gugu_hud.real_time_hud.real_time": "现实时间: %s",
+  "gugu_hud.game_time_hud.game_time": "世界时间: %s - 总计: %s",
+  "gugu_hud.player_position_hud.player_position": "坐标: x:%s y:%s z:%s",
+  "gugu_hud.player_position_hud.player_position_scaled": "%s: x:%s y:%s z:%s"
 }
