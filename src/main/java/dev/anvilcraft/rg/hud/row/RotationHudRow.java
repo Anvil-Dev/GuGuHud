@@ -8,10 +8,10 @@ import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.Entity;
 
-public class RotationHudRow extends HudRow{
+public class RotationHudRow extends HudRow {
     @Override
     public boolean isVisible() {
-        return GuGuHudRgRules.showRotationYaw||GuGuHudRgRules.showRotationPitch;
+        return GuGuHudRgRules.showRotationYaw || GuGuHudRgRules.showRotationPitch;
     }
 
     @Override
@@ -20,7 +20,7 @@ public class RotationHudRow extends HudRow{
         if (cameraEntity == null) return 0;
         MutableComponent result = Component.empty();
         boolean flag = false;
-        if(GuGuHudRgRules.showRotationYaw){
+        if (GuGuHudRgRules.showRotationYaw) {
             flag = true;
             result.append(
                 Component.translatable(
@@ -29,8 +29,8 @@ public class RotationHudRow extends HudRow{
                 )
             );
         }
-        if(GuGuHudRgRules.showRotationPitch){
-            if(flag) result.append(" | ");
+        if (GuGuHudRgRules.showRotationPitch) {
+            if (flag) result.append(" | ");
             result.append(
                 Component.translatable(
                     "gugu_hud.rotation_hud.rotation_pitch",
