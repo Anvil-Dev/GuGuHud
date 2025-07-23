@@ -40,6 +40,10 @@
   "rolling_gate.configuration.showBlockInChunkPosition.tooltip": "是否在HUD上显示子区块内方块坐标",
   "rolling_gate.configuration.showPlayerFacing": "显示玩家朝向",
   "rolling_gate.configuration.showPlayerFacing.tooltip": "是否在HUD上显示玩家朝向",
+  "rolling_gate.configuration.showRotationYaw": "显示偏航角",
+  "rolling_gate.configuration.showRotationYaw.tooltip": "是否在HUD上显示偏航角",
+  "rolling_gate.configuration.showRotationPitch": "显示俯仰角",
+  "rolling_gate.configuration.showRotationPitch.tooltip": "是否在HUD上显示俯仰角",
   "gugu_hud.tps_hud.no_data": "无可用数据",
   "gugu_hud.tps_hud.format": "TPS: %s MSPT: %s",
   "gugu_hud.moon_phase_hud.moon_phase": "月相",
@@ -66,5 +70,7 @@
   "gugu_hud.player_facing_hud.player_facing.west": "西",
   "gugu_hud.player_facing_hud.player_facing.north": "北",
   "gugu_hud.player_facing_hud.player_facing.up": "上",
-  "gugu_hud.player_facing_hud.player_facing.down": "下"
+  "gugu_hud.player_facing_hud.player_facing.down": "下",
+  "gugu_hud.rotation_hud.rotation_yaw": "偏航角: %s",
+  "gugu_hud.rotation_hud.rotation_pitch": "俯仰角: %s"
 }

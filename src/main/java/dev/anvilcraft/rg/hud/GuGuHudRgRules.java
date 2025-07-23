@@ -83,4 +83,12 @@ public class GuGuHudRgRules {
         categories = GuGuHud.MODID
     )
     public static boolean showPlayerFacing = false;
+    @Rule(
+        categories = GuGuHud.MODID
+    )
+    public static boolean showRotationYaw = false;
+    @Rule(
+        categories = GuGuHud.MODID
+    )
+    public static boolean showRotationPitch = false;
 }
