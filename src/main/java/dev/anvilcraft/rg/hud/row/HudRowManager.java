@@ -33,6 +33,9 @@ public class HudRowManager {
     public static final Supplier<HudRow> REAL_TIME_ROW = HUD_ROW_DEFERRED_REGISTER.register("real_time", RealTimeHudRow::new);
     public static final Supplier<HudRow> GAME_TIME_ROW = HUD_ROW_DEFERRED_REGISTER.register("game_time", GameTimeHudRow::new);
     public static final Supplier<HudRow> PLAYER_POSITION_ROW = HUD_ROW_DEFERRED_REGISTER.register("player_position", PlayerPositionHudRow::new);
+    public static final Supplier<HudRow> DIMENSION_ID_ROW = HUD_ROW_DEFERRED_REGISTER.register("dimension_id", DimensionIDHudRow::new);
+    public static final Supplier<HudRow> BLOCK_POSITION_ROW = HUD_ROW_DEFERRED_REGISTER.register("block_position", BlockPositionHudRow::new);
+    public static final Supplier<HudRow> PLAYER_FACING_ROW = HUD_ROW_DEFERRED_REGISTER.register("player_facing", PlayerFacingHudRow::new);
 
     @SubscribeEvent
     public static void registerRegistries(@NotNull NewRegistryEvent event) {

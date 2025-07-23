@@ -44,7 +44,7 @@ public class PlayerPositionHudRow extends HudRow {
         //noinspection NoTranslation
         return this.drawString(
             Component.translatable(
-                "%s / %s",
+                "%s | %s",
                 currentPosition,
                 scaledPosition
             )

@@ -63,4 +63,24 @@ public class GuGuHudRgRules {
         categories = GuGuHud.MODID
     )
     public static boolean showPlayerPositionScaled = false;
+    @Rule(
+        categories = GuGuHud.MODID
+    )
+    public static boolean showDimensionID = false;
+    @Rule(
+        categories = GuGuHud.MODID
+    )
+    public static boolean showBlockPosition = false;
+    @Rule(
+        categories = GuGuHud.MODID
+    )
+    public static boolean showChunkPosition = false;
+    @Rule(
+        categories = GuGuHud.MODID
+    )
+    public static boolean showBlockInChunkPosition = false;
+    @Rule(
+        categories = GuGuHud.MODID
+    )
+    public static boolean showPlayerFacing = false;
 }
