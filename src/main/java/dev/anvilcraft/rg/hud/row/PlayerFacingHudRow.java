@@ -2,7 +2,7 @@ package dev.anvilcraft.rg.hud.row;
 
 import dev.anvilcraft.rg.hud.GuGuHudRgRules;
 import net.minecraft.client.DeltaTracker;
-import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.Entity;
@@ -14,8 +14,8 @@ public class PlayerFacingHudRow extends HudRow {
     }
 
     @Override
-    public int render(GuiGraphics guiGraphics, DeltaTracker partialTick) {
-        Entity cameraEntity = this.mc().cameraEntity;
+    public int render(GuiGraphicsExtractor guiGraphics, DeltaTracker partialTick) {
+        Entity cameraEntity = this.mc().getCameraEntity();
         if (cameraEntity == null) return 0;
         Direction direction = cameraEntity.getDirection();
         String facing = direction.getName();

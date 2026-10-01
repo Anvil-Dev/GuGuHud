@@ -2,8 +2,8 @@ plugins {
     id 'java-library'
     id 'maven-publish'
     id 'idea'
-    id 'net.neoforged.moddev' version '2.0.99'
-    id 'io.freefair.lombok' version '8.7.1'
+    id 'net.neoforged.moddev' version '2.0.144'
+    id 'io.freefair.lombok' version '9.2.0'
 }
 
 String buildNumber
@@ -20,19 +20,14 @@ apply from: "$rootDir/gradle/scripts/repositories.gradle"
 apply from: "$rootDir/gradle/scripts/dependencies.gradle"
 
 base {
-    archivesName = mod_name + "-neoforge-1.21.1"
+    archivesName = mod_name + "-neoforge-26.2"
 }
 
-java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+java.toolchain.languageVersion = JavaLanguageVersion.of(25)
 
 neoForge {
     // Specify the version of NeoForge to use.
     version = project.neo_version
-
-    parchment {
-        mappingsVersion = project.parchment_mappings_version
-        minecraftVersion = project.parchment_minecraft_version
-    }
 
     // This line is optional. Access Transformers are automatically detected
     // accessTransformers.add('src/main/resources/META-INF/accesstransformer.cfg')
@@ -71,7 +66,7 @@ neoForge {
         }
 
         data {
-            data()
+            clientData()
             if (isJbr) {
                 jvmArgument "-XX:+AllowEnhancedClassRedefinition"
             }
@@ -168,5 +163,5 @@ idea {
 }
 
 lombok {
-    version = "1.18.34"
+    version = "1.18.44"
 }

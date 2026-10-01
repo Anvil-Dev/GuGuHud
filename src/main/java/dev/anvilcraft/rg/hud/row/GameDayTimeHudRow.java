@@ -2,7 +2,7 @@ package dev.anvilcraft.rg.hud.row;
 
 import dev.anvilcraft.rg.hud.GuGuHudRgRules;
 import net.minecraft.client.DeltaTracker;
-import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.multiplayer.ClientLevel;
 
 @SuppressWarnings("resource")
@@ -13,10 +13,10 @@ public class GameDayTimeHudRow extends HudRow {
     }
 
     @Override
-    public int render(GuiGraphics guiGraphics, DeltaTracker partialTick) {
+    public int render(GuiGraphicsExtractor guiGraphics, DeltaTracker partialTick) {
         ClientLevel level = this.mc().level;
         if (level == null) return 0;
-        long dayTime = level.getDayTime();
+        long dayTime = level.getOverworldClockTime();
         String format = GuGuHudRgRules.gameDayTimeFormat;
         format = format.replace("{Days}", String.valueOf(dayTime / 24000));
         format = format.replace("{Hours}", "%2d".formatted(((dayTime % 24000) + 6000) / 1000 % 24).replace(' ', '0'));

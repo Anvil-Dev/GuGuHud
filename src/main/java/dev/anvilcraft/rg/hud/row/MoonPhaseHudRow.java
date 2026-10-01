@@ -2,7 +2,7 @@ package dev.anvilcraft.rg.hud.row;
 
 import dev.anvilcraft.rg.hud.GuGuHudRgRules;
 import net.minecraft.client.DeltaTracker;
-import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.network.chat.Component;
 
@@ -29,10 +29,10 @@ public class MoonPhaseHudRow extends HudRow {
     }
 
     @Override
-    public int render(GuiGraphics guiGraphics, DeltaTracker partialTick) {
+    public int render(GuiGraphicsExtractor guiGraphics, DeltaTracker partialTick) {
         ClientLevel level = this.mc().level;
         if (level == null) return 0;
-        long dayTime = level.getDayTime();
+        long dayTime = level.getOverworldClockTime();
         int moonPhase = (int) (dayTime / 24000) % 8;
         return this.drawString(MOON_PHASE.getString() + ": " + MOON_PHASES.get(moonPhase).getString());
     }
