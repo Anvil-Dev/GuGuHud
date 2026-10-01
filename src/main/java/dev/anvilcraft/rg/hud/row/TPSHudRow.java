@@ -4,7 +4,7 @@ import dev.anvilcraft.rg.hud.GuGuHudRgRules;
 import dev.anvilcraft.rg.hud.mixin.PlayerTabOverlayAccessor;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.DeltaTracker;
-import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.ComponentContents;
 import net.minecraft.network.chat.MutableComponent;
@@ -24,7 +24,7 @@ public class TPSHudRow extends HudRow {
     }
 
     @Override
-    public int render(@NotNull GuiGraphics guiGraphics, DeltaTracker partialTick) {
+    public int render(@NotNull GuiGraphicsExtractor guiGraphics, DeltaTracker partialTick) {
         boolean singleplayer = this.mc().isSingleplayer();
         Component text = singleplayer ? singleplayerTPS() : multiplayerTPS();
         return this.drawString(text);

@@ -3,17 +3,17 @@ package dev.anvilcraft.rg.hud.row;
 import net.minecraft.client.DeltaTracker;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;
-import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.network.chat.Component;
 
 @SuppressWarnings("resource")
 public abstract class HudRow {
-    protected GuiGraphics guiGraphics;
+    protected GuiGraphicsExtractor guiGraphics;
     protected DeltaTracker deltaTracker;
 
     public abstract boolean isVisible();
 
-    public abstract int render(GuiGraphics guiGraphics, DeltaTracker partialTick);
+    public abstract int render(GuiGraphicsExtractor guiGraphics, DeltaTracker partialTick);
 
     protected Font font() {
         return this.mc().font;
@@ -23,7 +23,7 @@ public abstract class HudRow {
         return Minecraft.getInstance();
     }
 
-    public final void setGuiGraphics(GuiGraphics guiGraphics) {
+    public final void setGuiGraphics(GuiGraphicsExtractor guiGraphics) {
         this.guiGraphics = guiGraphics;
     }
 
@@ -41,13 +41,13 @@ public abstract class HudRow {
 
     public final int drawString(String text, int color) {
         this.drawBackground(this.font().width(text), this.font().lineHeight, 0x88666666);
-        this.guiGraphics.drawString(this.font(), text, 0, 0, color);
+        this.guiGraphics.text(this.font(), text, 0, 0, color);
         return this.font().lineHeight;
     }
 
     public int drawString(Component text, int color) {
         this.drawBackground(this.font().width(text), this.font().lineHeight, 0x88666666);
-        this.guiGraphics.drawString(this.font(), text, 0, 0, color);
+        this.guiGraphics.text(this.font(), text, 0, 0, color);
         return this.font().lineHeight;
     }
 

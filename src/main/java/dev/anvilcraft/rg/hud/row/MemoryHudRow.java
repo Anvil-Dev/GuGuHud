@@ -3,7 +3,7 @@ package dev.anvilcraft.rg.hud.row;
 import dev.anvilcraft.rg.hud.GuGuHudRgRules;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.DeltaTracker;
-import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.network.chat.Component;
 
 public class MemoryHudRow extends HudRow {
@@ -13,7 +13,7 @@ public class MemoryHudRow extends HudRow {
     }
 
     @Override
-    public int render(GuiGraphics guiGraphics, DeltaTracker partialTick) {
+    public int render(GuiGraphicsExtractor guiGraphics, DeltaTracker partialTick) {
         Runtime runtime = Runtime.getRuntime();
         long maxMemory = runtime.maxMemory();
         long totalMemory = runtime.totalMemory();
