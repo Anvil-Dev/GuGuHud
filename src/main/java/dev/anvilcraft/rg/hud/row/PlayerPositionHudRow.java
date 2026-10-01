@@ -18,7 +18,7 @@ public class PlayerPositionHudRow extends HudRow {
 
     @Override
     public int render(GuiGraphics guiGraphics, DeltaTracker partialTick) {
-        Entity entity = this.mc().cameraEntity;
+        Entity entity = this.mc().getCameraEntity();
         if (entity == null) return 0;
         Vec3 position = entity.position();
         Component currentPosition = Component.translatable(

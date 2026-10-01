@@ -15,7 +15,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.function.Supplier;
 
 @SuppressWarnings("unused")
-@EventBusSubscriber(modid = GuGuHud.MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+@EventBusSubscriber(modid = GuGuHud.MODID, value = Dist.CLIENT)
 public class HudRowManager {
     public static final ResourceKey<Registry<HudRow>> HUD_ROWS = ResourceKey.createRegistryKey(GuGuHud.of("hud_rows"));
     public static final Registry<HudRow> HUD_ROW_REGISTRY = new RegistryBuilder<>(HUD_ROWS)
