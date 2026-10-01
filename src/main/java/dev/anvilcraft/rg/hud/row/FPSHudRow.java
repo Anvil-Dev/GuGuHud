@@ -20,6 +20,6 @@ public class FPSHudRow extends HudRow {
 
     private int getFramerateLimit() {
         Minecraft mc = this.mc();
-        return mc.level == null && (mc.screen != null || mc.getOverlay() != null) ? 60 : mc.getWindow().getFramerateLimit();
+        return mc.level == null && (mc.screen != null || mc.getOverlay() != null) ? 60 : mc.getFramerateLimitTracker().getFramerateLimit();
     }
 }

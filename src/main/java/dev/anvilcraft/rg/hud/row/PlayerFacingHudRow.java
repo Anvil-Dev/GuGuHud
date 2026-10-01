@@ -15,7 +15,7 @@ public class PlayerFacingHudRow extends HudRow {
 
     @Override
     public int render(GuiGraphics guiGraphics, DeltaTracker partialTick) {
-        Entity cameraEntity = this.mc().cameraEntity;
+        Entity cameraEntity = this.mc().getCameraEntity();
         if (cameraEntity == null) return 0;
         Direction direction = cameraEntity.getDirection();
         String facing = direction.getName();

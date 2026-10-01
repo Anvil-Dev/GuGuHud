@@ -2,7 +2,7 @@ plugins {
     id 'java-library'
     id 'maven-publish'
     id 'idea'
-    id 'net.neoforged.moddev' version '2.0.99'
+    id 'net.neoforged.moddev' version '2.0.107'
     id 'io.freefair.lombok' version '8.7.1'
 }
 
@@ -20,7 +20,7 @@ apply from: "$rootDir/gradle/scripts/repositories.gradle"
 apply from: "$rootDir/gradle/scripts/dependencies.gradle"
 
 base {
-    archivesName = mod_name + "-neoforge-1.21.1"
+    archivesName = mod_name + "-neoforge-1.21.10"
 }
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
@@ -71,7 +71,7 @@ neoForge {
         }
 
         data {
-            data()
+            clientData()
             if (isJbr) {
                 jvmArgument "-XX:+AllowEnhancedClassRedefinition"
             }

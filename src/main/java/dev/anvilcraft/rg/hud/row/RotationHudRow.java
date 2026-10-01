@@ -16,7 +16,7 @@ public class RotationHudRow extends HudRow {
 
     @Override
     public int render(GuiGraphics guiGraphics, DeltaTracker partialTick) {
-        Entity cameraEntity = this.mc().cameraEntity;
+        Entity cameraEntity = this.mc().getCameraEntity();
         if (cameraEntity == null) return 0;
         MutableComponent result = Component.empty();
         boolean flag = false;

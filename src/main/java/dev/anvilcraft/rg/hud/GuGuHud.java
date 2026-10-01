@@ -2,11 +2,10 @@ package dev.anvilcraft.rg.hud;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.resources.ResourceLocation;
-import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
-import net.neoforged.fml.loading.FMLLoader;
+import net.neoforged.fml.loading.FMLEnvironment;
 import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 
@@ -18,7 +17,7 @@ public class GuGuHud {
     public static final Logger LOGGER = LogUtils.getLogger();
 
     public GuGuHud(IEventBus modEventBus, ModContainer modContainer) throws Exception {
-        if (FMLLoader.getDist() != Dist.CLIENT) return;
+        if (!FMLEnvironment.getDist().isClient()) return;
         Class<?> client = GuGuHud.class.getClassLoader().loadClass("dev.anvilcraft.rg.hud.row.HudRowManager");
         Method method = client.getMethod("register", IEventBus.class);
         method.invoke(null, modEventBus);
